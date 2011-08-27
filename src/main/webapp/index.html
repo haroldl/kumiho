@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Home</title>
+  </head>
+  <body class="lift:content_id=main">
+    <div id="main" class="lift:surround?with=spartan;at=content">
+
+      <div id="controls">
+        <div class="lift:form.ajax">
+          <input class="lift:SetMaxRecords" id="set_max_records"/>
+          <input type="submit" value="Set Max Log Records"/>
+        </div>
+        <!--
+        <div>
+          <form class="lift:form.ajax">
+            <input class="lift:LogRecord" id="new_log_record"/>
+            <input type="submit" value="Send Log Record"/>
+          </form>
+        </div>
+        -->
+        <form class="lift:form.ajax">
+          <div class="lift:controls.clearButtonForm">
+            <input type="submit" value="Clear"></input>
+          </div>
+        </form>
+        <form class="lift:form.ajax">
+          <div class="lift:controls.pauseButtonForm">
+            <input type="submit" value="Pause"></input>
+          </div>
+        </form>
+        <form class="lift:form.ajax">
+          <div class="lift:controls.resumeButtonForm">
+            <input type="submit" value="Resume"></input>
+          </div>
+        </form>
+        <hr/>
+        <div class="lift:controls.findLogFileInfo">
+          Log files:<br/>
+          <span id="logfiles"></span>
+	</div>
+        <hr/>
+        <div>
+          <form class="lift:form.ajax">
+            <div class="lift:AddLogFile">
+              Name:<br/>
+              <input name="name" id="name"/>
+              <br/>
+              Filename:<br/>
+              <input name="filename" id="filename"/>
+              <br/>
+              Record separator:<br/>
+              <input name="recordtype" id="recordtype"/>
+              <br/>
+              <input type="submit" value="Add Log File"/>
+            </div>
+          </form>
+        </div>
+      </div><!-- controls -->
+
+      <div id="logs">
+        <div class="lift:comet?type=Tail"></div>
+      </div>
+
+    </div><!-- main -->
+  </body>
+</html>
+

@@ -1,0 +1,8 @@
+*.h2.db
+lib_managed/
+target/
+project/boot/
+*~
+*.swp
+*.db.lock.db
+*.db.trace.db

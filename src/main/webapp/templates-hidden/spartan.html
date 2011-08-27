@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title class="lift:Menu.title">Kumiho</title>
+    <style class="lift:CSS.blueprint"></style>
+    <style class="lift:CSS.fancyType"></style>
+    <script id="jquery" src="/classpath/jquery.js" type="text/javascript"></script>
+    <script id="json" src="/classpath/json.js" type="text/javascript"></script>
+    <style type="text/css">
+/* <![CDATA[ */
+
+.edit_error_class {
+  display: block;
+  color: red;
+}
+
+.number_input, #set_max_records {
+  text-align: right;
+}
+
+.fixed_width {
+  font-family: "Courier New", Courier;
+}
+
+#title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+#controls {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  word-wrap: break-word;
+  padding: 3px;
+  overflow: hidden;
+}
+
+#logs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 200px;
+  height: 99%;
+  overflow: scroll;
+  border-left: 1px solid gray;
+  padding: 3px;
+}
+
+  /* ]]> */
+  </style>
+  </head>
+  <body>
+
+      <div id="title"> 
+        <h1 class="alt">Kumiho<img alt="" id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"></h1>
+        <div class="lift:Msgs?showAll=true"></div>
+        <hr class="space" />
+      </div>
+
+      <div id="content">The main content will get bound here</div>
+
+  </body>
+</html>
